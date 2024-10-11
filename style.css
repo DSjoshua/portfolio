@@ -255,7 +255,7 @@ section {
 
 .skill {
     background: #ffffff; /* Light background for skills */
-    padding: 15px;
+    padding: 45px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 123, 50, 0.1);
     transition: transform 0.2s, box-shadow 0.3s;
@@ -303,8 +303,6 @@ section {
     width: 100%;
     padding: 60px 20px;
     background-color: #222; /* Dark background for contrast */
-    color: #fff; /* White text
-    /* About Section Styles */
     color: #fff; /* White text for contrast */
 }
 
@@ -314,7 +312,7 @@ section {
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 123, 50, 0.2);
-    background-color: #111; /* Dark background to match the theme */
+    background-color: rgba(17, 17, 17, 0.95); /* Slight transparency for depth */
     margin-top: 60px;
 }
 
@@ -329,7 +327,10 @@ section {
     font-size: clamp(1rem, 1vw + 0.5rem, 1.2rem);
     margin: 20px 0;
     line-height: 1.6; /* Increased line-height for readability */
+    text-align: left; /* Align text to the left for easier reading */
+    max-width: 800px; /* Limit the width for better readability */
 }
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -421,4 +422,158 @@ footer {
 
 .footer-social-links a:hover {
     color: #fff; /* Change color on hover */
+}
+
+#contact {
+    width: 100%;
+    padding: 60px 20px;
+    background-color: #222; /* Dark background for contrast */
+    color: #fff; /* White text for contrast */
+}
+
+.contact-container {
+    max-width: 800px; /* Maximum width for the contact form */
+    margin: 0 auto; /* Center the contact section */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 123, 50, 0.2); /* Soft shadow */
+    background-color: rgba(17, 17, 17, 0.95); /* Slight transparency for depth */
+}
+
+.contact-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00cc44; /* Green accent color */
+    text-shadow: 0 0 10px #00cc44; /* Soft glow effect */
+}
+
+.contact-container p {
+    font-size: clamp(1rem, 1vw + 0.5rem, 1.2rem);
+    margin: 20px 0;
+    line-height: 1.6; /* Increased line-height for readability */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Space between form fields */
+}
+
+label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Space below the label */
+    font-weight: 600; /* Bold labels */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding for inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #fff; /* White background for inputs */
+    color: #000; /* Black text */
+    transition: border-color 0.2s; /* Transition for border color */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #00cc44; /* Green border on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    width: 100%; /* Full width for the button */
+    height: 50px;
+    background-color: #00cc44; /* Green button */
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: 0.2s;
+    cursor: pointer;
+    margin-top: 20px; /* Space above the button */
+}
+
+button:hover {
+    transform: scale(1.05); /* Scale button on hover */
+    background-color: transparent; /* Change background color */
+    border: 2px solid #00cc44; /* Green border on hover */
+    color: #00cc44; /* Change text color */
+    box-shadow: 0 0 10px #00cc44; /* Glow effect */
+}
+
+.social-links {
+    display: flex; /* Flexbox for social icons */
+    justify-content: center; /* Center the icons */
+    margin-top: 20px; /* Space above the social links */
+}
+
+.social-links i {
+    margin: 0 10px; /* Space between icons */
+    color: #00cc44; /* Green color for icons */
+    font-size: 1.5rem; /* Icon size */
+    transition: color 0.3s; /* Transition effect for hover */
+}
+
+.social-links i:hover {
+    color: #fff; /* Change color on hover */
+}
+
+/* Services Section Styles */
+#services {
+    width: 100%;
+    padding: 60px 20px;
+    background-color: #222; /* Dark background for contrast */
+    color: #fff; /* White text for contrast */
+}
+
+.services-container {
+    max-width: 1100px;
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 123, 50, 0.2); /* Soft shadow */
+    background-color: #111; /* Dark background to match the theme */
+}
+
+.services-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #00cc44; /* Green accent color */
+    text-shadow: 0 0 10px #00cc44; /* Soft glow effect */
+    text-align: center; /* Centered title */
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Space between services */
+    margin-bottom: 5px;
+}
+
+.service {
+    background: #ffffff; /* Light background for service cards */
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 123, 50, 0.1); /* Soft shadow */
+    transition: transform 0.2s, box-shadow 0.3s; /* Animation effects */
+}
+
+.service:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 0 15px rgba(0, 123, 50, 0.3); /* Stronger shadow on hover */
+}
+
+.service h3 {
+    font-size: 1.5rem; /* Heading size */
+    margin-bottom: 10px;
+    color: #00cc44; /* Green heading color */
+    text-shadow: 0 0 5px #00cc44; /* Soft glow effect */
+}
+
+.service p {
+    font-size: clamp(1rem, 1vw + 0.5rem, 1.2rem); /* Responsive text size */
+    line-height: 1.6; /* Increased line-height for readability */
 }

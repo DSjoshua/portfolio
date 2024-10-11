@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
     <title>Joshua Portfolio</title>
@@ -15,12 +16,23 @@
                 Santos <span>Joshua</span>
             </div>
             <div class="links">
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#about">About</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#skills">Skills</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Services</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contact</a></div>
-        </div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+                    <a href="#"><i class="fas fa-home"></i> Home</a>
+                </div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                    <a href="#about"><i class="fas fa-user"></i> About</a>
+                </div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                    <a href="#skills"><i class="fas fa-cogs"></i> Skills</a>
+                </div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                    <a href="#"><i class="fas fa-briefcase"></i> Services</a>
+                </div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+                    <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+                </div>
+            </div>
+            
         <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
     </div>
         <div class="dropdown">
@@ -41,7 +53,7 @@
             </div>
             <div class="content">
                 <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Joshua</span></h1>
-                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I'm a <span class="typewriter-text"></span><label for="">|</label></div>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I'm a <span class="typewriter-text"></span><label for=""></label></div>
                 <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">I am looking for Job that can improve my knowledge, gain real world experience, acquire new skills, and to help the company to improve their system related to Information Technology.</p>
                 <div class="social-links">
                     <a href="https://github.com/DSjoshua?tab=repositories" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
@@ -55,6 +67,15 @@
             </div>
         </div>
     </section>
+
+    <section id="about">
+        <div class="about-container" data-aos="fade-up" data-aos-duration="1500">
+            <h2><i class="fas fa-info-circle"></i> About Me</h2>
+            <p>Hello! I'm Joshua, a passionate IT professional with a Bachelor’s degree in Information Technology. My journey in tech began with a deep interest in web development and graphic design, and I have continuously sought opportunities to enhance my skills.</p>
+            <p>I have practical experience in administration and customer service, which has taught me the importance of effective communication and teamwork. I am proficient in HTML, CSS, and I'm currently honing my skills in React to create dynamic web applications.</p>
+            <p>I thrive on challenges and am eager to contribute to projects that allow me to learn and grow. My goal is to leverage my technical knowledge and creative flair to deliver solutions that make a difference.</p>
+        </div>
+    </section>    
 
     <section id="skills">
         <div class="skills-container" data-aos="fade-up" data-aos-duration="1500">
@@ -94,27 +115,42 @@
         </div>
     </section>
 
-    <section id="about">
-        <div class="about-container" data-aos="fade-up" data-aos-duration="1500">
-            <h2>About Me</h2>
-            <p>Hello! I'm Joshua, a passionate IT professional with a Bachelor’s degree in Information Technology. My journey in tech began with a deep interest in web development and graphic design, and I have continuously sought opportunities to enhance my skills. </p>
-            <p>I have practical experience in administration and customer service, which has taught me the importance of effective communication and teamwork. I am proficient in HTML, CSS and I'm currently honing my skills in React to create dynamic web applications.</p>
-            <p>I thrive on challenges and am eager to contribute to projects that allow me to learn and grow. My goal is to leverage my technical knowledge and creative flair to deliver solutions that make a difference.</p>
+    <section id="services">
+        <div class="services-container">
+            <h2>Our Services</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Web Development</h3>
+                    <p>Creating responsive and functional websites that meet your business needs.</p>
+                </div>
+                <div class="service">
+                    <h3>Graphic Design</h3>
+                    <p>Designing visually stunning graphics for branding and marketing purposes.</p>
+                </div>
+                <div class="service">
+                    <h3>SEO Optimization</h3>
+                    <p>Improving your website's visibility on search engines to attract more visitors.</p>
+                </div>
+                <div class="service">
+                    <h3>Content Creation</h3>
+                    <p>Producing high-quality content that engages and informs your audience.</p>
+                </div>
+            </div>
         </div>
     </section>
     
-    <footer>
-        <div class="footer-container">
-            <p>&copy; 2024 Joshua V. Delos Santos. All Rights Reserved.</p>
-            <div class="footer-social-links">
-                <a href="https://github.com/DSjoshua?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.facebook.com/JoshuaSantos323" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-            </div>
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2024 Joshua V. Delos Santos. All Rights Reserved.</p>
+        <div class="footer-social-links">
+            <a href="https://github.com/DSjoshua?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.facebook.com/JoshuaSantos323" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
         </div>
-    </footer>
-    
+    </div>
+</footer>
+
     
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
