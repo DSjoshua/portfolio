@@ -381,3 +381,42 @@ section {
         width: 90%; /* Wider button for small screens */
     }
 }
+
+
+footer {
+    width: 100%;
+    background-color: #111; /* Match background color */
+    padding: 20px 0; /* Vertical padding for the footer */
+    color: #fff; /* Text color */
+    text-align: center; /* Center text */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); /* Slight shadow for depth */
+}
+
+.footer-container {
+    max-width: 1200px; /* Max width for content */
+    margin: 0 auto; /* Centering */
+    display: flex; /* Flexbox for alignment */
+    flex-direction: column; /* Column layout */
+    align-items: center; /* Center items */
+}
+
+.footer-container p {
+    margin: 0; /* Remove default margin */
+    font-size: 1rem; /* Font size for copyright text */
+}
+
+.footer-social-links {
+    margin-top: 10px; /* Space between text and icons */
+    display: flex; /* Flexbox for social icons */
+    gap: 15px; /* Space between icons */
+}
+
+.footer-social-links a {
+    color: #00cc44; /* Green color for icons */
+    font-size: 1.5rem; /* Icon size */
+    transition: color 0.3s; /* Transition effect for hover */
+}
+
+.footer-social-links a:hover {
+    color: #fff; /* Change color on hover */
+}
