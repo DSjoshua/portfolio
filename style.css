@@ -237,6 +237,7 @@ section {
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 123, 50, 0.2);
     background-color: #111; /* Match overall theme */
+    margin-top: 60px;
 }
 
 .skills-container h2 {
@@ -314,6 +315,7 @@ section {
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 123, 50, 0.2);
     background-color: #111; /* Dark background to match the theme */
+    margin-top: 60px;
 }
 
 .about-container h2 {
