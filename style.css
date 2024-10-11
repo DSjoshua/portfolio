@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #111;
+    color: #fff;
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    background: rgba(0, 0, 0, 0.6);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #077b32;
+    text-shadow: 0 0 10px #077b32;
+}
+
+.hamburg,
+.cancel {
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: white;
+    display: none;
+    font-size: 2rem;
+}
+
+.nav-container .links {
+    display: flex;
+}
+
+.nav-container .links a {
+    position: relative;
+    font-size: 1.2rem;
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s linear;
+}
+
+.nav-container .links a::before {
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #077b32;
+    transition: 0.2s linear;
+}
+
+.nav-container .links a:hover::before {
+    width: 100%;
+}
+
+.nav-container .links a:hover {
+    color: #077b32;
+}
+
+.dropdown {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    transform: translateY(-500px);
+    width: 100%;
+    height: auto;
+    backdrop-filter: blur(4px) brightness(40%);
+    box-shadow: 0 0 20px black;
+    transition: 0.3s linear;
+}
+
+.dropdown .links a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 0;
+    text-align: center;
+    transition: 0.2s linear;
+}
+
+.dropdown .links a:hover {
+    background-color: #077b32;
+}
+
+section {
+    width: 100%;
+    height: 90vh;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.main-container .image {
+    width: 400px;
+    height: 67vh;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 50px #077b32;
+}
+
+.main-container .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-container .image:hover {
+    animation: animate 1.5s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0% { scale: 1; }
+    50% { scale: 1.05; }
+    100% { scale: 1; }
+}
+
+.main-container .content {
+    color: white;
+    width: 40%;
+    min-height: 100px;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: clamp(2rem, 2vw + 1rem, 3rem);
+}
+
+.content h1 span {
+    color: #077b32;
+    text-shadow: 0 0 10px #077b32;
+}
+
+.content .typewriter {
+    font-size: clamp(1.5rem, 1vw + 1rem, 2.5rem);
+    font-weight: 600;
+}
+
+.content .typewriter-text {
+    color: #077b32;
+    text-shadow: 0 0 10px #077b32;
+}
+
+.content p {
+    font-size: clamp(1rem, 1vw + 0.5rem, 1.2rem);
+    margin: 10px 0;
+}
+
+.social-links i {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border: 0.2rem solid #077b32;
+    border-radius: 50%;
+    color: #077b32;
+    margin: 5px 15px;
+    font-size: 1.5rem;
+    transition: 0.2s linear;
+}
+
+.social-links i:hover {
+    scale: 1.2;
+    color: black;
+    background-color: #077b32;
+    filter: drop-shadow(0 0 10px #077b32);
+}
+
+.content button {
+    width: 200px;
+    height: 50px;
+    background-color: #077b32;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+
+.content button:hover {
+    scale: 1.05;
+    color: #077b32;
+    background-color: transparent;
+    border: 2px solid #077b32;
+    box-shadow: 0 0 40px #077b32;
+}
+
+#skills {
+    width: 100%;
+    background: #ffffff;
+    padding: 50px 20px;
+    color: #000;
+    text-align: center;
+}
+
+.skills-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 123, 50, 0.2);
+    background-color: #0d0d0d;
+}
+
+.skills-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #077b32;
+    text-shadow: 0 0 10px #077b32;
+    font-weight: bold;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.skill {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 123, 50, 0.1);
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.skill:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 123, 50, 0.2);
+}
+
+.skill h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #077b32;
+    text-shadow: 0 0 5px #077b32;
+}
+
+.progress {
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 15px;
+    position: relative;
+}
+
+.progress-bar {
+    background: linear-gradient(to right, #077b32, #00cc44);
+    height: 100%;
+    width: 0%;
+    border-radius: 10px;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 15px;
+    color: #fff;
+    font-size: 0.9rem;
+    transition: width 1s ease-in-out;
+}
+
+.skill:hover .progress-bar {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .nav-container .links {
+        display: none;
+    }
+
+    .hamburg {
+        display: block;
+    }
+
+    .main-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-container .content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-container .image {
+        width: 80%;
+        height: auto;
+    }
+
+    .social-links i {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.3rem;
+    }
+
+    .content button {
+        width: 80%;
+    }
+}
