@@ -117,31 +117,36 @@ nav {
 
 section {
     width: 100%;
-    height: 90vh;
+    min-height: 90vh;
+    padding: 50px 0;
 }
 
 .main-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 0 20px;
+    max-width: 1200px; /* Maximum width for content */
+    margin: 0 auto; /* Centering */
+    height: 100%; /* Full height */
+    display: flex; /* Flex display for alignment */
+    justify-content: space-between; /* Even space between items */
+    align-items: center; /* Center items vertically */
+    padding: 0 20px; /* Horizontal padding */
 }
 
 .main-container .image {
-    width: 400px;
-    height: 67vh;
-    border-radius: 50%;
+    width: 400px; /* Adjust size as needed */
+    height: 400px; /* Maintain the same width and height for a perfect circle */
+    border-radius: 50%; /* This makes the image circular */
     overflow: hidden;
-    box-shadow: 0 0 50px #077b32;
+    box-shadow: 0 0 50px #077b32; /* Keep the shadow effect */
+    display: flex; /* Use flex to center image */
+    justify-content: center; /* Center the image inside the div */
+    align-items: center; /* Center the image inside the div */
 }
 
 .main-container .image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Ensures the image covers the entire area without distortion */
+    border-radius: 50%; /* Optional: Keep image itself rounded if you have a non-square image */
 }
 
 .main-container .image:hover {
@@ -155,10 +160,12 @@ section {
 }
 
 .main-container .content {
+    flex: 2;
     color: white;
-    width: 40%;
-    min-height: 100px;
+    min-height: 200px;
+    padding: 20px;
     text-align: center;
+    max-width: 500px;
 }
 
 .content h1 {
@@ -173,6 +180,7 @@ section {
 .content .typewriter {
     font-size: clamp(1.5rem, 1vw + 1rem, 2.5rem);
     font-weight: 600;
+    margin: 15px 0;
 }
 
 .content .typewriter-text {
@@ -182,7 +190,14 @@ section {
 
 .content p {
     font-size: clamp(1rem, 1vw + 0.5rem, 1.2rem);
-    margin: 10px 0;
+    margin: 20px 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
 }
 
 .social-links i {
@@ -195,8 +210,6 @@ section {
     border: 0.2rem solid #077b32;
     border-radius: 50%;
     color: #077b32;
-    margin: 5px 15px;
-    font-size: 1.5rem;
     transition: 0.2s linear;
 }
 
@@ -204,7 +217,7 @@ section {
     scale: 1.2;
     color: black;
     background-color: #077b32;
-    filter: drop-shadow(0 0 10px #077b32);
+    box-shadow: 0 0 10px #077b32;
 }
 
 .content button {
@@ -218,6 +231,7 @@ section {
     border-radius: 5px;
     transition: 0.2s linear;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 .content button:hover {
@@ -242,7 +256,7 @@ section {
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 123, 50, 0.2);
-    background-color: #0d0d0d;
+    background-color: #f5f5f5;
 }
 
 .skills-container h2 {
@@ -337,5 +351,9 @@ section {
 
     .content button {
         width: 80%;
+    }
+
+    .main-container {
+        padding: 10px; /* Added padding for mobile */
     }
 }
