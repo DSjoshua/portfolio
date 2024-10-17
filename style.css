@@ -238,6 +238,7 @@ section {
     box-shadow: 0 0 20px rgba(0, 123, 50, 0.2);
     background-color: #111; /* Match overall theme */
     margin-top: 60px;
+    animation: fadeIn 1.5s ease-in-out; /* Entrance animation */
 }
 
 .skills-container h2 {
@@ -245,6 +246,7 @@ section {
     margin-bottom: 30px;
     color: #00cc44; /* Green accent color */
     text-shadow: 0 0 10px #00cc44; /* Soft glow effect */
+    animation: glow 2s infinite alternate; /* Glow animation */
 }
 
 .skills {
@@ -259,6 +261,8 @@ section {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 123, 50, 0.1);
     transition: transform 0.2s, box-shadow 0.3s;
+    animation: slideInUp 0.7s ease forwards; /* Slide-in animation */
+    opacity: 0; /* Initially hidden */
 }
 
 .skill:hover {
@@ -296,6 +300,36 @@ section {
 
 .skill:hover .progress-bar {
     width: 100%; /* Full width on hover */
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #00cc44, 0 0 20px #00cc44, 0 0 30px #00cc44;
+    }
+    100% {
+        text-shadow: 0 0 20px #00cc44, 0 0 30px #00cc44, 0 0 40px #00cc44;
+    }
 }
 
 /* About Section Styles */
