@@ -236,6 +236,7 @@ section {
     box-shadow: 0 0 30px rgba(0, 123, 50, 0.3); /* Slightly stronger shadow */
     background-color: #111; /* Keeping this dark for contrast */
     margin-top: 120px;
+    margin-bottom: 50px;
     animation: fadeIn 1.5s ease-in-out;
 }
 
@@ -356,6 +357,7 @@ section {
     box-shadow: 0 0 20px rgba(0, 123, 50, 0.2);
     background-color: rgba(17, 17, 17, 0.95);
     margin-top: 120px;
+    margin-bottom: 50px;
 }
 
 .about-container h2 {
